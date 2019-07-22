@@ -1,0 +1,36 @@
+{
+  "name": "electron-webpack-quick-start-react",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "resolutions": {
+    "js-yaml": "3.13.1",
+    "lodash": "4.17.13"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.8.3",
+    "react-router-dom": "^5.0.1",
+    "source-map-support": "^0.5.12"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "dotenv": "^8.0.0",
+    "electron": "5.0.6",
+    "electron-builder": "21.0.11",
+    "electron-webpack": "^2.7.4",
+    "electron-webpack-eslint": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "~4.35.0"
+  }
+}

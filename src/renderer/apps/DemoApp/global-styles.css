@@ -1,0 +1,8 @@
+/* 
+ * a simple example of global style.
+ * without using style-loader/useable, this would permanently remain loaded,
+ * changing the body even after the app that included this stylesheet got unmounted.
+ */
+body {
+  background: rgb(212, 230, 229);
+}

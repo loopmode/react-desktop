@@ -1,0 +1,30 @@
+:local(.AppLauncher) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  $item-size: 20vmin;
+  $item-gap: 2vmin;
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: $item-gap $item-gap 0 0;
+  }
+  nav a {
+    background: #eee;
+    padding: 1vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $item-size;
+    height: $item-size;
+    margin-left: $item-gap;
+    margin-bottom: $item-gap;
+    text-decoration: none;
+  }
+  nav a:hover {
+    background: rgb(216, 234, 253);
+  }
+}
